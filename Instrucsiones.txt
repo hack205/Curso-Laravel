@@ -1,0 +1,8 @@
+Instalación 
+Necesitamos instalar:
+	* xampp para utilizar php
+	* Compouser (https://getcomposer.org/Composer-Setup.exe)
+	* Laravel 
+
+Para iniciar el servidor es:
+	* php artisan serve
