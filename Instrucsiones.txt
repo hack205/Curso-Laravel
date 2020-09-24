@@ -6,3 +6,23 @@ Necesitamos instalar:
 
 Para iniciar el servidor es:
 	* php artisan serve
+
+Para correr migraciones es:
+	* para crear tablas es:
+	- php artisan make:migration add_categories_table --create=categories
+	*para migrarlas a la base de datos es:
+	- php artisan migrate
+
+Para crear modelos en laravel es:
+	*php artisan make:model category
+
+Tinker es una herramienta que nos permite hacer pruebas en la base de datos
+Para usar tinker es :      
+	*php artisan tinker
+
+	*para insertar algo en tinker es:
+	-$user = ['name'=>'Francisco Javier','email'=>'Francisco20708@hotmail.com','password'=>bcrypt('pollo')]
+	-\App\Models\User::create($user);
+
+	*Para imprimir todos los usuarios
+	-$user = \App\Models\User::all();
