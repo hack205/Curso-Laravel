@@ -9,4 +9,8 @@ class category extends Model
 {
     protected $table = "categories";
     protected $fillable = ['name'];
+
+    public function articles(){
+        return $this->hashMany('App\Models\article');
+    }
 }

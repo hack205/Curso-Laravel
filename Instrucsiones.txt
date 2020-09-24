@@ -26,3 +26,9 @@ Para usar tinker es :
 
 	*Para imprimir todos los usuarios
 	-$user = \App\Models\User::all();
+
+Para asociar un campo con una tabla usamos la palabra attach('id')
+	*$article->tags()->attach(3)
+	
+Si tenemos problemas con el timestamps añadimos a la funcion el siguiente modificador:
+	*->withTimestamps();
